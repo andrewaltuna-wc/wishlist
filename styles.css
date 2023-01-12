@@ -177,6 +177,10 @@ input[type='checkbox'] {
     cursor: pointer;
 }
 
+#item-submit:enabled:hover {
+    background-color: #480606;
+}
+
 #item-submit:disabled {
     background-color: gray;
     cursor: default;
