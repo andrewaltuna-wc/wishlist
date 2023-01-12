@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Christmas Wishlist</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1>🎄 My 2022 Christmas Wishlist 🎄</h1>
+        </section>
+    </header>
+    <section class="container">
+        <div class="list-header">
+            <h2>Major Wishlist</h2>
+        </div>
+        <section id="major-list">
+            <section class="major-item">
+                <div class="item-header">
+                    <input type="checkbox" name="checkbox" onchange="checkBoxChange(this)">
+                    <h2 class="item-name">Nike AirForce 1</h2>
+                </div>
+                <a href="https://www.nike.com/ph/t/air-force-1-07-shoes-WrLlWX/CW2288-111" target="_blank">
+                    <img src="https://www.pngkey.com/png/full/204-2046997_air-force-1-png-nike-air-force-1.png" alt="">
+                </a>
+                <div>
+                    <h3>Description:</h3>
+                    <p>I've had my eye on this pair for a while now!</p>
+                </div>
+            </section>
+            <section class="major-item">
+                <div class="item-header">
+                    <input type="checkbox" name="checkbox" onchange="checkBoxChange(this)">
+                    <h2 class="item-name">iPhone 14 Pro</h2>
+                </div>
+                <a href="https://www.apple.com/ph/shop/buy-iphone/iphone-14-pro" target="_blank">
+                    <img src="https://www.pngall.com/wp-content/uploads/13/iPhone-14-PNG-Image.png" alt="">
+                </a>
+                <div>
+                    <h3>Description:</h3>
+                    <p>My phone's battery is dead so I want a replacement.</p>
+                </div>
+            </section>
+            <section class="major-item">
+                <div class="item-header">
+                    <input type="checkbox" name="checkbox" onchange="checkBoxChange(this)">
+                    <h2 class="item-name">McDonald's 20 Piece Nuggets</h2>
+                </div>
+                <a href="https://www.mcdonalds.com/ca/en-ca/product/20-chicken-mcnuggets.html" target="_blank">
+                    <img src="https://mds-web-20210505.s3-ap-southeast-1.amazonaws.com/uploads/images/MDSProdImage2020-Group-20pcnuggets%20435x320px.png" alt="">
+                </a>
+                <div>
+                    <h3>Description:</h3>
+                    <p>My favorite midnight snack :~)</p>
+                </div>
+            </section>
+        </section>
+        <div class="list-header">
+            <h2>Minor Wishlist</h2>
+        </div>
+        <section id="minor-list">
+            <div id="item-add-group">
+                <input id="item-input" type="text">
+                <button id="item-submit" type="submit" onclick="addWishlistItem()">Add to Wishlist</button>
+            </div>
+            <section id="minor-item-list">
+                <div class="minor-item">
+                    <div class="item-header">
+                        <input type="checkbox" name="checkbox" onchange="checkBoxChange(this)">
+                        <h3 class="minor-item-name item-name">Sample item</h3>
+                    </div>
+                    <div class="minor-delete" >
+                        <button type="submit" onclick="removeWishlistItem(this)">
+                            <img src="assets/trash.png" alt="" class="minor-delete-icon">
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <footer>
+        <section class="contact-me">
+            <h2>Contact Me</h2>
+            <div class="contact-divider"></div>
+            <div>
+                <h3>Andrew Steven L. Altuna</h3>
+                <ul>
+                    <li>
+                        <img src="assets/mail.png" alt="">
+                        <a class="mail-to" href="mailto:andrew.altuna@whitecloak.com"><span>andrew.altuna@whitecloak.com</span></a>
+                    </li>
+                    <li>
+                        <img src="assets/phone.png" alt="">
+                        <span>(+63) 977 853 0733</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
