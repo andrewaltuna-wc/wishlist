@@ -190,6 +190,7 @@ input[type='checkbox'] {
     border: 1px solid gray;
     border-radius: 10px;
     outline: none;
+    min-width: 1%;
 }
 
 #item-add-group {
